@@ -141,5 +141,4 @@ class CartService
             $query->select('id', 'name', 'thumb');
         }])->get();
     }
-
 }
