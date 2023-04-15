@@ -3,14 +3,15 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\Users\LoginController;
 use App\Http\Controllers\Admin\MainController;
-use App\Http\Controllers\IndexController;
-use App\Http\Controllers\MenusController;
 use App\Http\Controllers\Admin\MenuController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\UploadController;
 use App\Http\Controllers\Admin\CartController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\InformationController;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\MenusController;
+use App\Http\Controllers\Admin\LogoController;
 
 
 Route::get('admin/users/login',[LoginController::class, 'index']);
@@ -72,6 +73,17 @@ Route::middleware(['auth'])->group(function () { //kiem tra da dang nhap hay chu
             Route::post('edit/{information}',[InformationController::class, 'update']);
             Route::DELETE('destroy',[InformationController::class, 'destroy']);
         });
+
+        #LOGO
+        Route::prefix('logos')->group(function (){
+
+            Route::get('add',[LogoController::class, 'create']);
+            Route::post('add',[LogoController::class, 'store']);
+            Route::get('list',[LogoController::class, 'index']);
+            Route::get('edit/{logo}',[LogoController::class, 'show']);
+            Route::post('edit/{logo}',[LogoController::class, 'update']);
+            Route::DELETE('destroy',[LogoController::class, 'destroy']);
+        });
     });
 
 
@@ -87,3 +99,4 @@ Route::get('carts',[App\Http\Controllers\CartController::class, 'show'] );
 Route::post('update-cart',[App\Http\Controllers\CartController::class, 'update'] );
 Route::get('carts/delete/{id}',[App\Http\Controllers\CartController::class, 'remove'] );
 Route::post('carts',[App\Http\Controllers\CartController::class, 'addCart'] );
+

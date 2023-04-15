@@ -13,9 +13,9 @@
             <nav class="limiter-menu-desktop container">
 
                 <!-- Logo desktop -->
-                <a href="#" class="logo">
-                    <img src="images/icons/logo-01.png" alt="IMG-LOGO">
-                </a>
+
+                {{-- @include('logo') --}}
+
 
                 <!-- Menu desktop -->
                 <div class="menu-desktop">
@@ -23,6 +23,10 @@
                         <li class="active-menu"><a href="/">Trang Chủ</a></li>
                         <!-- Hien menu -->
                         {!! $menusHtml !!}
+
+                        <li>
+                            <a href="about.html">Blog</a>
+                        </li>
 
                         <li>
                             <a href="about.html">Thông Tin</a>

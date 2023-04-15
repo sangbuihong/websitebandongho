@@ -34,7 +34,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item">
+            <li class="nav-item">
             <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-list"></i>
               <p>
@@ -56,30 +56,30 @@
                 </a>
               </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-th"></i>
-              <p>
-                Sản Phẩm
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="/admin/products/add" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Thêm sản phẩm</p>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-th"></i>
+                <p>
+                    Sản Phẩm
+                    <i class="right fas fa-angle-left"></i>
+                </p>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="/admin/products/list" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Danh sách sản phẩm</p>
-                </a>
-              </li>
-            </ul>
-          </li>
+                <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="/admin/products/add" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Thêm sản phẩm</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/admin/products/list" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Danh sách sản phẩm</p>
+                    </a>
+                </li>
+                </ul>
+            </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-sliders-h"></i>
@@ -121,16 +121,38 @@
 
                 </ul>
             </li>
-
-          <li class="nav-item">
-            <a href="/admin/menus/list" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Widgets
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-file-image"></i>
+                    <p>
+                        Logos
+                        <i class="right fas fa-angle-left"></i>
+                        </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="/admin/logos/add" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Thêm logo</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/logos/list" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Danh sách logo</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="/admin/menus/list" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                    Widgets
+                    <span class="right badge badge-danger">New</span>
+                </p>
+                </a>
+            </li>
       </nav>
       <!-- /.sidebar-menu -->
     </div>

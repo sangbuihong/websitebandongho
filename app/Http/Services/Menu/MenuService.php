@@ -77,4 +77,5 @@ class MenuService
         ->orderByDesc('id')
         ->paginate(12);
     }
+
 }
