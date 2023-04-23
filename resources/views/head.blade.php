@@ -33,5 +33,7 @@
 	<link rel="stylesheet" type="text/css" href="/teamplate/css/main.css">
     <link rel="stylesheet" type="text/css" href="/teamplate/css/style.css">
 <!--===============================================================================================-->
+<!-- Font Awesome -->
+<link rel="stylesheet" href="/teamplate/admin/plugins/fontawesome-free/css/all.min.css">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>

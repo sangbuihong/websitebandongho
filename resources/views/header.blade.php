@@ -14,7 +14,7 @@
 
                 <!-- Logo desktop -->
 
-                {{-- @include('logo') --}}
+                @include('logo')
 
 
                 <!-- Menu desktop -->
@@ -24,9 +24,12 @@
                         <!-- Hien menu -->
                         {!! $menusHtml !!}
 
+
                         <li>
-                            <a href="about.html">Blog</a>
+                            <a href="/tin-tuc">Blog</a>
                         </li>
+
+
 
                         <li>
                             <a href="about.html">Thông Tin</a>

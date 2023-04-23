@@ -6,18 +6,25 @@ use Illuminate\Http\Request;
 use App\Http\Services\Slider\SliderService;
 use App\Http\Services\Menu\MenuService;
 use App\Http\Services\Product\ProductService;
+use App\Http\Services\Logo\LogoService;
+use App\Http\Services\Blog\BlogService;
 
 class IndexController extends Controller
 {
     protected $slider;
     protected $menu;
     protected $product;
+    protected $logo;
+    protected $blog;
 
     public function __construct(SliderService $slider, MenuService $menu,
-    ProductService $product){
+    ProductService $product, LogoService $logo, BlogService $blog){
         $this->slider = $slider;
         $this->menu = $menu;
         $this->product = $product;
+        $this->logo = $logo;
+        $this->blog = $blog;
+
     }
 
     public function index(){
@@ -25,7 +32,9 @@ class IndexController extends Controller
             'title'=>'Shop Đồng Hồ',
             'sliders' =>$this->slider->show(),
             'menus' =>$this->menu->show(),
-            'products'=>$this->product->get()
+            'products'=>$this->product->get(),
+            'logos'=>$this->logo->show(),
+            'blogs'=>$this->blog->get()
         ]);
     }
 

@@ -38,20 +38,31 @@
         </div>
 
         <div class="form-group">
+            <label for="menu">Ảnh</label>
+            <input type="file"  class="form-control" id="upload">
+            <div class="form-group mt-3" id="image_show">
+                <a href="{{ $menu->thumb}}" target="_blank">
+                    <img src="{{ $menu->thumb}}" width="50px" height="50px">
+                </a>
+            </div>
+            <input type="hidden" name="thumb" id="thumb">
+        </div>
+
+        <div class="form-group">
           <label for="">Kích Hoạt</label>
           <div class="custom-control custom-radio">
-            <input class="custom-control-input" value="1" id="active" type="radio" 
+            <input class="custom-control-input" value="1" id="active" type="radio"
             name="active"{{ $menu->active == 1 ? 'checked = ""':''}}>
             <label for="active" class="custom-control-label">Có</label>
           </div>
           <div class="custom-control custom-radio">
-            <input class="custom-control-input" value="0" id="no_active" type="radio" 
+            <input class="custom-control-input" value="0" id="no_active" type="radio"
             name="active" {{ $menu->active == 0 ? 'checked = ""':''}}>
             <label for="no_active" class="custom-control-label">Không</label>
           </div>
-        
+
         </div>
-        
+
       <!-- /.card-body -->
 
       <div class="card-footer">

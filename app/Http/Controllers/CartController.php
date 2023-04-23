@@ -31,6 +31,13 @@ class CartController extends Controller
         ]);
     }
 
+    public function update(Request $request)
+    {
+        $this->cartService->update($request);
+
+        return redirect('/carts');
+    }
+
     public function remove($id = 0){
         $this->cartService->remove($id);
         return redirect('/carts');

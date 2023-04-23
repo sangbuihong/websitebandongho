@@ -6,28 +6,28 @@
         <!-- Block2 -->
         <div class="block2">
             <div class="block2-pic hov-img0">
-                <img src="{{$product->thumb}}" alt="{{$product->name}}">
+                <img src="{{$product->thumb}}" alt="{{$product->name}}" style="height: 175px;">
 
-                <a href="#" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
-                    Quick View
+                <a href="xem-san-pham/{{$product->id}}-{{Str::slug($product->name)}}.html" class="block2-btn flex-c-m  cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+                    Xem Qua
                 </a>
             </div>
 
             <div class="block2-txt flex-w flex-t p-t-14">
                 <div class="block2-txt-child1 flex-col-l ">
-                    <a href="/san-pham/{{$product->id}}-{{$product->name , '-'}} .html" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                    <a href="/san-pham/{{$product->id}}-{{$product->name , '-'}} .html" class=" cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
                         {{$product->name}}
                     </a>
 
-                    <span class="stext-105 cl3">
+                    <span class=" cl3">
                         {!!\App\Helpers\Helper::price($product->price, $product->price_sale)!!}
                     </span>
                 </div>
 
                 <div class="block2-txt-child2 flex-r p-t-3">
                     <a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
-                        <img class="icon-heart1 dis-block trans-04" src="images/icons/icon-heart-01.png" alt="ICON">
-                        <img class="icon-heart2 dis-block trans-04 ab-t-l" src="images/icons/icon-heart-02.png" alt="ICON">
+                        <i class="icon-heart1 dis-block trans-04 nav-icon far fa-heart" ></i>
+                        <i class="icon-heart2 dis-block trans-04 ab-t-l nav-icon fas fa-heart" ></i>
                     </a>
                 </div>
             </div>
@@ -36,6 +36,9 @@
 
     @endforeach
 </div>
+
+
+@include('products.quick')
 
 
 

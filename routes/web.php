@@ -11,10 +11,12 @@ use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\InformationController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\MenusController;
+use App\Http\Controllers\BlogsController;
 use App\Http\Controllers\Admin\LogoController;
+use App\Http\Controllers\Admin\BlogController;
 
 
-Route::get('admin/users/login',[LoginController::class, 'index']);
+Route::get('admin/login',[LoginController::class, 'index']);
 Route::post('admin/users/login/store',[LoginController::class, 'store']);
 
 Route::middleware(['auth'])->group(function () { //kiem tra da dang nhap hay chua
@@ -84,6 +86,16 @@ Route::middleware(['auth'])->group(function () { //kiem tra da dang nhap hay chu
             Route::post('edit/{logo}',[LogoController::class, 'update']);
             Route::DELETE('destroy',[LogoController::class, 'destroy']);
         });
+        #BLOG
+        Route::prefix('blogs')->group(function (){
+
+            Route::get('add',[BlogController::class, 'create']);
+            Route::post('add',[BlogController::class, 'store']);
+            Route::get('list',[BlogController::class, 'index']);
+            Route::get('edit/{blog}',[BlogController::class, 'show']);
+            Route::post('edit/{blog}',[BlogController::class, 'update']);
+            Route::DELETE('destroy',[BlogController::class, 'destroy']);
+        });
     });
 
 
@@ -100,3 +112,5 @@ Route::post('update-cart',[App\Http\Controllers\CartController::class, 'update']
 Route::get('carts/delete/{id}',[App\Http\Controllers\CartController::class, 'remove'] );
 Route::post('carts',[App\Http\Controllers\CartController::class, 'addCart'] );
 
+Route::get('tin-tuc',[App\Http\Controllers\BlogsController::class, 'index']);
+Route::get('blog-detail/{id}-{slug}.html',[App\Http\Controllers\BlogsController::class, 'shows']);

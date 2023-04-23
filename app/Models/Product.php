@@ -21,6 +21,7 @@ class Product extends Model
     ];
     public function menu()
     {
+        // lien ket
         return $this->hasOne(Menu::class, 'id', 'menu_id')
             ->withDefault(['name' => '']);
     }

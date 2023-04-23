@@ -21,5 +21,25 @@ class ProductsController extends Controller
             'product'=>$product,
             'products'=>$productsMore
         ]);
+
+    }
+    public function list($id='', $slug=''){
+        $product = $this->productService->show($id);
+        $productsMore = $this->productService->more($id);
+        return view('products.contents',[
+            'title'=> $product->name,
+            'product'=>$product,
+            'products'=>$productsMore
+        ]);
+
+    }
+    public function shows($id='', $slug=''){
+        // $product = $this->productService->shows($id);
+        $productsMore =$this->productService->mores($id);
+        return view('products.quick',[
+            'title'=>$product->name,
+            // 'product'=> $product,
+            'products'=>$productsMore
+        ]);
     }
 }

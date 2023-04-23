@@ -14,11 +14,11 @@
                                 <table class="table-shopping-cart">
                                     <tbody>
                                     <tr class="table_head">
-                                        <th class="column-1">Product</th>
+                                        <th class="column-1">Sản phẩm</th>
                                         <th class="column-2"></th>
-                                        <th class="column-3">Price</th>
-                                        <th class="column-4">Quantity</th>
-                                        <th class="column-5">Total</th>
+                                        <th class="column-3">Giá</th>
+                                        <th class="column-4">Số lượng</th>
+                                        <th class="column-5">Tổng</th>
                                         <th class="column-6">&nbsp;</th>
                                     </tr>
 
@@ -42,7 +42,7 @@
                                                         <i class="fs-16 zmdi zmdi-minus"></i>
                                                     </div>
 
-                                                    <input class="mtext-104 cl3 txt-center num-product" type="number"
+                                                    <input class=" cl3 txt-center num-product" type="number"
                                                            name="num_product[{{ $product->id }}]" value="{{ $carts[$product->id] }}">
 
                                                     <div class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
@@ -62,17 +62,17 @@
 
                             <div class="flex-w flex-sb-m bor15 p-t-18 p-b-15 p-lr-40 p-lr-15-sm">
                                 <div class="flex-w flex-m m-r-20 m-tb-5">
-                                    <input class="stext-104 cl2 plh4 size-117 bor13 p-lr-20 m-r-10 m-tb-5" type="text"
-                                           name="coupon" placeholder="Coupon Code">
+                                    <input class=" cl2 plh4 size-117 bor13 p-lr-20 m-r-10 m-tb-5" type="text"
+                                           name="coupon" placeholder="mã giảm giá">
 
                                     <div
-                                        class="flex-c-m stext-101 cl2 size-118 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-5">
-                                        Apply coupon
+                                        class="flex-c-m  cl5 size-118 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-5">
+                                        Áp dụng
                                     </div>
                                 </div>
 
-                                <input type="submit" value="Update Cart" formaction="/update-cart"
-                                    class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
+                                <input type="submit" value="Cập nhật" formaction="/update-cart"
+                                    class="flex-c-m  cl5 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
                                 @csrf
                             </div>
                         </div>
@@ -80,18 +80,18 @@
 
                     <div class="col-sm-10 col-lg-7 col-xl-5 m-lr-auto m-b-50">
                         <div class="bor10 p-lr-40 p-t-30 p-b-40 m-l-63 m-r-40 m-lr-0-xl p-lr-15-sm">
-                            <h4 class="mtext-109 cl2 p-b-30">
-                                Cart Totals
+                            <h4 class="cl5 fw-bold p-b-30">
+                                Tổng giỏ hàng
                             </h4>
 
-                            <div class="flex-w flex-t p-t-27 p-b-33">
+                            <div class="flex-w flex-t fw-bold p-t-27 p-b-33">
                                 <div class="size-208">
-                                    <span class="mtext-101 cl2">
-                                        Total:
+                                    <span class="cl2">
+                                        Tổng:
                                     </span>
                                 </div>
 
-                                <div class="size-209 p-t-1">
+                                <div class="fw-bold p-t-1">
                                     <span class="mtext-110 cl2">
                                         {{ number_format($total, 0, '', '.') }}
                                     </span>
@@ -103,24 +103,24 @@
                                 <div class="size-100 p-r-18 p-r-0-sm w-full-ssm">
 
                                     <div class="p-t-15">
-                                        <span class="stext-112 cl8">
+                                        <span class="cl8">
                                             Thông Tin Khách Hàng
                                         </span>
 
                                         <div class="bor8 bg0 m-b-12">
-                                            <input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="name" placeholder="Tên khách Hàng" required>
+                                            <input class=" cl8 plh3 size-111 p-lr-15" type="text" name="name" placeholder="Tên khách Hàng" >
                                         </div>
 
                                         <div class="bor8 bg0 m-b-12">
-                                            <input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="phone" placeholder="Số Điện Thoại" required>
+                                            <input class=" cl8 plh3 size-111 p-lr-15" type="text" name="phone" placeholder="Số Điện Thoại" >
                                         </div>
 
                                         <div class="bor8 bg0 m-b-12">
-                                            <input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="address" placeholder="Địa Chỉ Giao Hàng">
+                                            <input class=" cl8 plh3 size-111 p-lr-15" type="text" name="address" placeholder="Địa Chỉ Giao Hàng">
                                         </div>
 
                                         <div class="bor8 bg0 m-b-12">
-                                            <input class="stext-111 cl8 plh3 size-111 p-lr-15" type="text" name="email" placeholder="Email Liên Hệ">
+                                            <input class=" cl8 plh3 size-111 p-lr-15" type="text" name="email" placeholder="Email Liên Hệ">
                                         </div>
 
                                         <div class="bor8 bg0 m-b-12">
@@ -131,7 +131,7 @@
                                 </div>
                             </div>
 
-                            <button class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
+                            <button class="flex-c-m cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
                                Đặt Hàng
                             </button>
                         </div>

@@ -15,6 +15,7 @@ class Helper{
                     <tr>
                         <td>' . $menu->id . '</td>
                         <td>' . $char . $menu->name . '</td>
+                        <td><img src="'. $menu->thumb .'" width="50px" height="50px"></td>
                         <td>' . self::active($menu->active) . '</td>
                         <td>' . $menu->updated_at . '</td>
                         <td>
@@ -37,13 +38,14 @@ class Helper{
 
         return $html;
     }
+    //
     public static function active($active = 0) : string
     {
         return $active ==0 ? '<span class="btn btn-danger btn-xs">NO</span>'
         :
         '<span class="btn btn-success btn-xs">YES</span';
     }
-
+    //
     public static function menus($menus, $parent_id = 0) :string {
         $html ='';
         foreach ($menus as $key => $menu) {

@@ -51,7 +51,7 @@ class LogoService
 
 
     public function show(){
-        return Logo::where('active',1)->orderByDesc('sort_by')->get();
+        return Logo::where('active',1)->orderByDesc('id')->get();
     }
 }
 
