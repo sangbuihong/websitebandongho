@@ -54,7 +54,7 @@
                                             <img src="{{ $product->thumb }}" alt="IMG-PRODUCT">
 
                                             <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
-                                               href="images/product-detail-01.jpg" tabindex="0">
+                                               href="/teamplate/images/product-detail-01.jpg" tabindex="0">
                                                 <i class="fa fa-expand"></i>
                                             </a>
                                         </div>
@@ -79,7 +79,7 @@
                         {!! \App\Helpers\Helper::price($product->price, $product->price_sale) !!}
                     </span>
 
-                    <p class="stext-102 cl3 p-t-23">
+                    <p class="text-4 cl3 p-t-23">
                         {{ $product->description }}
                     </p>
 
@@ -104,8 +104,8 @@
 
 
                                         <button type="submit"
-                                                class="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 ">
-                                            Add to cart
+                                                class="flex-c-m  cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04 ">
+                                            Thêm vào giỏ hàng
                                         </button>
                                         <input type="hidden" name="product_id" value="{{ $product->id }}">
                                     @endif
@@ -127,17 +127,17 @@
 
                         <a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100"
                            data-tooltip="Facebook">
-                            <i class="fa fa-facebook"></i>
+                            <i class="fas fa-facebook"></i>
                         </a>
 
                         <a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100"
                            data-tooltip="Twitter">
-                            <i class="fa fa-twitter"></i>
+                            <i class="fas fa-twitter"></i>
                         </a>
 
                         <a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100"
                            data-tooltip="Google Plus">
-                            <i class="fa fa-google-plus"></i>
+                            <i class="fas fa-google-plus"></i>
                         </a>
                     </div>
                 </div>
@@ -150,16 +150,15 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item p-b-10">
-                        <a class="nav-link active" data-toggle="tab" href="#description" role="tab">Description</a>
+                        <a class="nav-link active" data-toggle="tab" href="#description" role="tab">Thông tin</a>
                     </li>
 
                     <li class="nav-item p-b-10">
-                        <a class="nav-link" data-toggle="tab" href="#information" role="tab">Additional
-                            information</a>
+                        <a class="nav-link" data-toggle="tab" href="#information" role="tab">Thông số sản phẩm</a>
                     </li>
 
                     <li class="nav-item p-b-10">
-                        <a class="nav-link" data-toggle="tab" href="#reviews" role="tab">Reviews (1)</a>
+                        <a class="nav-link" data-toggle="tab" href="#reviews" role="tab">Reviews</a>
                     </li>
                 </ul>
 
@@ -168,8 +167,8 @@
                     <!-- - -->
                     <div class="tab-pane fade show active" id="description" role="tabpanel">
                         <div class="how-pos2 p-lr-15-md">
-                            <p class="stext-102 cl6">
-                                {{ $product->content }}
+                            <p class="text-4 cl6">
+                                {!! $product->content !!}
                             </p>
                         </div>
                     </div>
@@ -181,51 +180,51 @@
                                 <ul class="p-lr-28 p-lr-15-sm">
                                     <li class="flex-w flex-t p-b-7">
                                         <span class="stext-102 cl3 size-205">
-                                            Weight
+                                            Thương hiệu
                                         </span>
 
                                         <span class="stext-102 cl6 size-206">
-                                            0.79 kg
+                                            {{ $product->menu->name }}
                                         </span>
                                     </li>
 
                                     <li class="flex-w flex-t p-b-7">
                                         <span class="stext-102 cl3 size-205">
-                                            Dimensions
+                                            Xuất xứ
                                         </span>
 
                                         <span class="stext-102 cl6 size-206">
-                                            110 x 33 x 100 cm
+                                            Thụy sỹ
                                         </span>
                                     </li>
 
                                     <li class="flex-w flex-t p-b-7">
                                         <span class="stext-102 cl3 size-205">
-                                            Materials
+                                            Kính
                                         </span>
 
                                         <span class="stext-102 cl6 size-206">
-                                            60% cotton
+                                            saphea
                                         </span>
                                     </li>
 
                                     <li class="flex-w flex-t p-b-7">
                                         <span class="stext-102 cl3 size-205">
-                                            Color
+                                            Máy
                                         </span>
 
                                         <span class="stext-102 cl6 size-206">
-                                            Black, Blue, Grey, Green, Red, White
+                                            Cơ, pin
                                         </span>
                                     </li>
 
                                     <li class="flex-w flex-t p-b-7">
                                         <span class="stext-102 cl3 size-205">
-                                            Size
+                                            Chống nước
                                         </span>
 
                                         <span class="stext-102 cl6 size-206">
-                                            XL, L, M, S
+                                            30 ATM
                                         </span>
                                     </li>
                                 </ul>
@@ -336,13 +335,13 @@
 <section class="sec-relate-product bg0 p-t-45 p-b-105">
     <div class="container">
         <div class="p-b-45">
-            <h3 class="ltext-106 cl5 txt-center">
-                Related Products
+            <h3 class=" cl5 txt-center">
+                Sản Phẩm Mới
             </h3>
         </div>
 
         @include('products.list')
-        
+
     </div>
 </section>
 

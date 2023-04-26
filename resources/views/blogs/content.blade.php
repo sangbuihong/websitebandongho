@@ -28,12 +28,12 @@
 
                         <div class="p-t-32">
                             <h4 class="p-b-15">
-                                <a href="/blog-detail/{{ $blog->id }}-{{Str::slug($blog->name)}}.html" class="ltext-108 cl2 hov-cl1 trans-04" style="font-family:Arial, Helvetica, sans-serif;">
+                                <a href="/blog-detail/{{ $blog->id }}-{{Str::slug($blog->name)}}.html" class="ltext-108 cl2 hov-cl1 trans-04">
                                     {{$blog->name}}
                                 </a>
                             </h4>
 
-                            <p class="stext-117 cl6" style="font-family:Arial, Helvetica, sans-serif;">
+                            <p class="stext-117 cl6">
                                 {{$blog->description}}
                             </p>
 

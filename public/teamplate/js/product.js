@@ -23,3 +23,14 @@ function loadMore()
         }
     })
 }
+
+
+$('.js-show-modal').on('click',function(e){
+    e.initEvent();
+    $('.js-modal').val($(products).data('id'));
+    $('.js-modal').addClass('show-modal');
+});
+
+$('.js-hide-modal').on('click',function(){
+    $('.js-modal').removeClass('show-modal');
+});

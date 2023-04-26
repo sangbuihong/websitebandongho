@@ -25,9 +25,9 @@
                         </div>
 
                         <div class="block1-txt-child2 p-b-4 trans-05">
-                            <div class="block1-link stext-101 cl0 trans-09">
-                                XEM
-                            </div>
+
+                                <button class="block1-link stext-101 cl0 trans-09">XEM</button>
+                            
                         </div>
                     </a>
                 </div>
@@ -38,3 +38,4 @@
         </div>
     </div>
 </div>
+

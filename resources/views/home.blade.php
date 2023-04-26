@@ -19,7 +19,7 @@
                         <hr style = "background-color:rgb(0, 0, 0); width:70%;float:left;height:10px">
                         <hr style = "background-color:rgb(167, 167, 167);height:10px">
                     </div>
-                    <div class="col-sm-4 " ><h2>Sản Phẩm</h2></div>
+                    <div class="col-sm-4 stext-101" ><h2>Sản Phẩm</h2></div>
                     <div class="col-sm-4">
                         <hr style = "background-color:rgb(0, 0, 0); width:70%;float:right;height:10px">
                         <hr style = "background-color:rgb(167, 167, 167);height:10px">
@@ -65,42 +65,30 @@
 				<div class="dis-none panel-filter w-full p-t-10">
 					<div class="wrap-filter flex-w bg6 w-full p-lr-40 p-t-27 p-lr-15-sm">
 						<div class="filter-col1 p-r-15 p-b-27">
-							<div class=" cl2 p-b-15">
-								Sắp xếp theo
-							</div>
+                            <div class="mtext-102 cl2 p-b-15">
+                                Sắp xếp
+                            </div>
 
-							<ul>
-								<li class="p-b-6">
-									<a href="#" class="filter-link  trans-04 filter-link-active">
-										Mặc định
-									</a>
-								</li>
+                            <ul>
+                                <li class="p-b-6">
+                                    <a href="{{ request()->url() }}" class="filter-link stext-106 trans-04">
+                                        Default
+                                    </a>
+                                </li>
 
-								<li class="p-b-6">
-									<a href="#" class="filter-link  trans-04">
-										A-Z
-									</a>
-								</li>
+                                <li class="p-b-6">
+                                    <a href="{{ request()->fullUrlWithQuery(['price' => 'asc']) }}" class="filter-link stext-106 trans-04">
+                                        Price: Low to High
+                                    </a>
+                                </li>
 
-								<li class="p-b-6">
-									<a href="#" class="filter-link  trans-04">
-										Giá tăng dần
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<a href="#" class="filter-link  trans-04 ">
-										Giá giảm dần
-									</a>
-								</li>
-
-								<li class="p-b-6">
-									<a href="#" class="filter-link  trans-04">
-										Màu sắc
-									</a>
-								</li>
-							</ul>
-						</div>
+                                <li class="p-b-6">
+                                    <a href="{{ request()->fullUrlWithQuery(['price' => 'desc']) }}" class="filter-link stext-106 trans-04">
+                                        Price: High to Low
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
 						<div class="filter-col1 p-r-15 p-b-27">
 							<div class=" cl2 p-b-15">
@@ -226,7 +214,7 @@
 			<!-- Load more -->
 			<div class="flex-c-m flex-w w-full p-t-45" id="button-loadMore">
                 <input type="hidden" value="1" id="page">
-				<a onclick="loadMore()" class="flex-c-m cl5 size-103 bg2 bor1 hov-btn1 p-lr-15 trans-04">
+				<a onclick="loadMore()" class="flex-c-m cl5  stext-101 size-103 bg2 bor1 hov-btn1 p-lr-15 trans-04">
 					Xem Thêm
 				</a>
 			</div>

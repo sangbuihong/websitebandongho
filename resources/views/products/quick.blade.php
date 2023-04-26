@@ -42,10 +42,10 @@
                         </span>
 
                         <p class=" cl3 p-t-23">
-                            {{$product->description}}
+                            {{$product->descriptzion}}
                         </p>
 
-                        
+
                         <!--  -->
                         <div class="flex-w flex-m p-l-100 p-t-40 respon7">
                             <div class="flex-m bor9 p-r-10 m-r-11">

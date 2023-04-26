@@ -6,21 +6,21 @@
         <!-- Block2 -->
         <div class="block2">
             <div class="block2-pic hov-img0">
-                <img src="{{$product->thumb}}" alt="{{$product->name}}" style="height: 175px;">
+                <img src="{{$product->thumb}}" alt="{{$product->name}}" style="height: 270px;">
 
-                <a href="xem-san-pham/{{$product->id}}-{{Str::slug($product->name)}}.html" class="block2-btn flex-c-m  cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1">
+                <a href="/san-pham/{{$product->id}}-{{$product->name , '-'}} .html" class="block2-btn flex-c-m  cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 ">
                     Xem Qua
                 </a>
             </div>
 
             <div class="block2-txt flex-w flex-t p-t-14">
                 <div class="block2-txt-child1 flex-col-l ">
-                    <a href="/san-pham/{{$product->id}}-{{$product->name , '-'}} .html" class=" cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+                    <a href="/san-pham/{{$product->id}}-{{$product->name , '-'}} .html" class=" cl4 hov-cl1 trans-04 js-name-b2 p-b-6" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: black">
                         {{$product->name}}
                     </a>
 
                     <span class=" cl3">
-                        {!!\App\Helpers\Helper::price($product->price, $product->price_sale)!!}
+                        {!!\App\Helpers\Helper::price($product->price, $product->price_sale)!!} đ
                     </span>
                 </div>
 
@@ -33,6 +33,7 @@
             </div>
         </div>
     </div>
+
 
     @endforeach
 </div>

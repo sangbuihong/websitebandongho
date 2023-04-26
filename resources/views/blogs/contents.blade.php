@@ -6,7 +6,7 @@
                     <hr style = "background-color:rgb(0, 0, 0); width:70%;float:left;height:10px">
                     <hr style = "background-color:rgb(167, 167, 167);height:10px">
                 </div>
-                <div class="col-sm-4 text-uppercase fw-bold"><h2>Tin Tức</h2></div>
+                <div class="col-sm-4 stext-101 text-uppercase fw-bold"><h1>Tin Tức</h1></div>
                 <div class="col-sm-4">
                     <hr style = "background-color:rgb(0, 0, 0); width:70%;float:right;height:10px">
                     <hr style = "background-color:rgb(167, 167, 167);height:10px">
@@ -54,19 +54,12 @@
                             </a>
                         </h4>
 
-                        <p class="stext-108 cl6" style="display: -webkit-box;
-                                                        max-height: 3.2rem;
-                                                        -webkit-box-orient: vertical;
-                                                        overflow: hidden;
-                                                        text-overflow: ellipsis;
-                                                        white-space: normal;
-                                                        -webkit-line-clamp: 2;
-                                                        line-height: 1.6rem;">
+                        <p class="stext-108 cl6" >
                             {{$blog->description}}
                         </p>
                     </div>
                     <a href="/blog-detail/{{ $blog->id }}-{{Str::slug($blog->name)}}.html" >
-                        <button type="button" class="btn btn-outline-secondary" style="float: right">
+                        <button type="button" class="stext-107 btn btn-outline-secondary" style="float: right">
                             Tiếp tục
                             <i class="nav-icon fas fa-angle-double-right"></i>
                         </button>

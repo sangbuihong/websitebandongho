@@ -34,11 +34,11 @@ class ProductsController extends Controller
 
     }
     public function shows($id='', $slug=''){
-        // $product = $this->productService->shows($id);
+        $product = $this->productService->shows($id);
         $productsMore =$this->productService->mores($id);
         return view('products.quick',[
-            'title'=>$product->name,
-            // 'product'=> $product,
+            'title'=>'sdf',
+            'product'=> $product,
             'products'=>$productsMore
         ]);
     }

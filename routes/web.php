@@ -96,6 +96,16 @@ Route::middleware(['auth'])->group(function () { //kiem tra da dang nhap hay chu
             Route::post('edit/{blog}',[BlogController::class, 'update']);
             Route::DELETE('destroy',[BlogController::class, 'destroy']);
         });
+        #INFORMATION
+        Route::prefix('infors')->group(function (){
+
+            Route::get('add',[BlogController::class, 'create']);
+            Route::post('add',[BlogController::class, 'store']);
+            Route::get('list',[BlogController::class, 'index']);
+            Route::get('edit/{infor}',[BlogController::class, 'show']);
+            Route::post('edit/{infor}',[BlogController::class, 'update']);
+            Route::DELETE('destroy',[BlogController::class, 'destroy']);
+        });
     });
 
 
@@ -106,6 +116,7 @@ Route::post('/services/load-product',[IndexController::class, 'loadProduct']);
 
 Route::get('danh-muc/{id}-{slug}.html',[App\Http\Controllers\MenusController::class, 'index']);
 Route::get('san-pham/{id}-{slug}.html',[App\Http\Controllers\ProductsController::class, 'index']);
+Route::get('{id}-{slug}.html',[App\Http\Controllers\ProductsController::class, 'shows']);
 Route::post('add-cart',[App\Http\Controllers\CartController::class, 'index'] );
 Route::get('carts',[App\Http\Controllers\CartController::class, 'show'] );
 Route::post('update-cart',[App\Http\Controllers\CartController::class, 'update'] );

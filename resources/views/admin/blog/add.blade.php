@@ -24,7 +24,7 @@
 
         <div class="form-group">
             <label>Mô Tả Chi Tiết</label>
-            <textarea name="content" class="form-control">{{ old('content') }}</textarea>
+            <textarea name="content" id="content" class="form-control">{{ old('content') }}</textarea>
         </div>
 
         <div class="form-group">
@@ -57,8 +57,8 @@
 </form>
 
 @endsection
-{{-- @section('footer')
+@section('footer')
   <script>
     CKEDITOR.replace( 'content' );
   </script>
-@endsection --}}
+@endsection

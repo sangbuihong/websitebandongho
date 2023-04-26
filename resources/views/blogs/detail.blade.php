@@ -4,7 +4,7 @@
 
 <section class="bg0 p-t-120 p-b-20">
     <div class="container">
-        <div class="row">  
+        <div class="row">
 
             @forelse ($blogs as $blog )
 
@@ -48,10 +48,10 @@
                         </p>
 
                         <p class="stext-117 cl6 p-b-26" style="font-family:Arial, Helvetica, sans-serif;align:justify;word-wrap: break-word;">
-                            {{$blog->content}}
+                            {!!$blog->content!!}
                         </p>
                     </div>
-                    
+
                     <div class="flex-w flex-t p-t-16">
                         <span class="size-216 stext-116 cl8 p-t-4">
                             Thẻ

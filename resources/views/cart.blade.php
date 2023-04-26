@@ -20,7 +20,7 @@
 
             <ul class="header-cart-wrapitem w-full">
 
-                @if (count($products) >= 0)
+                @if (count($products) != 0)
                     @foreach ( $products as $key => $product)
                         @php
                             $sl = count([$product]);
@@ -45,6 +45,8 @@
                         </li>
 
                     @endforeach
+                @else
+                        gio hang trong
                 @endif
 
             </ul>

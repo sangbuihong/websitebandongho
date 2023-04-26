@@ -53,15 +53,13 @@ class ProductService
     public function shows($id){
         return Product::where('id', $id)
         ->where('active', 1)
-        ->orderByDesc('id')->get();
+        ->where('id','==', $id)->get();
     }
     public function mores($id){
         return Product::select('id', 'name', 'price', 'price_sale', 'thumb')
         ->where('active', 1)
         ->where('id', $id)
-        ->orderByDesc('id')
-        ->limit(8)
         ->get();
     }
-    
+
 }
