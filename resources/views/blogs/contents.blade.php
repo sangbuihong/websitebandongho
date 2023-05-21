@@ -20,7 +20,7 @@
             <div class="col-sm-6 col-md-4 p-b-40">
                 <div class="blog-item">
                     <div class="hov-img0" style="height:220px">
-                        <a href="blog-detail.html">
+                        <a href="/blog-detail/{{ $blog->id }}-{{Str::slug($blog->name)}}.html">
                             <img src="{{$blog->thumb}}" alt="IMG-BLOG">
                         </a>
                     </div>
@@ -49,12 +49,17 @@
                         </div>
 
                         <h4 class="p-b-12">
-                            <a href="blog-detail.html" class="mtext-101 cl2 hov-cl1 trans-04" style="font-family: Arial, Helvetica, sans-serif">
+                            <a href="/blog-detail/{{ $blog->id }}-{{Str::slug($blog->name)}}.html" class="mtext-101 cl2 hov-cl1 trans-04" style="font-family: Arial, Helvetica, sans-serif">
                                 {{$blog->name}}
                             </a>
                         </h4>
 
-                        <p class="stext-108 cl6" >
+                        <p class="stext-108 cl6" style="display: -webkit-box;
+                                                        -webkit-box-orient: vertical;
+                                                         overflow: hidden;
+                                                         text-overflow: ellipsis;
+                                                         white-space: normal;
+                                                         -webkit-line-clamp: 4;" >
                             {{$blog->description}}
                         </p>
                     </div>

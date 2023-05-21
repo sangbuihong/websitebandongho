@@ -39,15 +39,15 @@
                             </span>
                         </span>
 
-                        <h4 class="ltext-109 cl2 p-b-28" style="font-family:Arial, Helvetica, sans-serif;">
+                        <h4 class="ltext-109 cl2 p-b-28" >
                             {{$blog->name}}
                         </h4>
 
-                        <p class="stext-117 cl6 p-b-26" style="font-family:Arial, Helvetica, sans-serif;">
+                        <p class="stext-108 cl6 p-b-26" >
                             {{$blog->description}}
                         </p>
 
-                        <p class="stext-117 cl6 p-b-26" style="font-family:Arial, Helvetica, sans-serif;align:justify;word-wrap: break-word;">
+                        <p class="stext-108 cl6 p-b-26" >
                             {!!$blog->content!!}
                         </p>
                     </div>

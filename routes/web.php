@@ -14,7 +14,8 @@ use App\Http\Controllers\MenusController;
 use App\Http\Controllers\BlogsController;
 use App\Http\Controllers\Admin\LogoController;
 use App\Http\Controllers\Admin\BlogController;
-
+use App\Http\Controllers\Admin\InforController;
+use App\Mail\GuiEmail;
 
 Route::get('admin/login',[LoginController::class, 'index']);
 Route::post('admin/users/login/store',[LoginController::class, 'store']);
@@ -99,12 +100,12 @@ Route::middleware(['auth'])->group(function () { //kiem tra da dang nhap hay chu
         #INFORMATION
         Route::prefix('infors')->group(function (){
 
-            Route::get('add',[BlogController::class, 'create']);
-            Route::post('add',[BlogController::class, 'store']);
-            Route::get('list',[BlogController::class, 'index']);
-            Route::get('edit/{infor}',[BlogController::class, 'show']);
-            Route::post('edit/{infor}',[BlogController::class, 'update']);
-            Route::DELETE('destroy',[BlogController::class, 'destroy']);
+            Route::get('add',[InforController::class, 'create']);
+            Route::post('add',[InforController::class, 'store']);
+            Route::get('list',[InforController::class, 'index']);
+            Route::get('edit/{infor}',[InforController::class, 'show']);
+            Route::post('edit/{infor}',[InforController::class, 'update']);
+            Route::DELETE('destroy',[InforController::class, 'destroy']);
         });
     });
 
@@ -125,3 +126,8 @@ Route::post('carts',[App\Http\Controllers\CartController::class, 'addCart'] );
 
 Route::get('tin-tuc',[App\Http\Controllers\BlogsController::class, 'index']);
 Route::get('blog-detail/{id}-{slug}.html',[App\Http\Controllers\BlogsController::class, 'shows']);
+Route::get('gioi-thieu',[App\Http\Controllers\InforsController::class, 'index']);
+
+// CONTACT
+Route::get('lien-he', [App\Http\Controllers\ContactsController::class, 'index']);
+Route::post('guilienhe', [App\Http\Controllers\ContactsController::class, 'submitContactForm']);

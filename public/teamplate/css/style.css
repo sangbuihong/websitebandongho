@@ -7,6 +7,16 @@
     font-family:Arial, Helvetica, sans-serif;
     word-wrap: break-word;
 }
+.dv{
+    display: -webkit-box;
+    max-height: 3.2rem;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    line-height: 1.6rem;
+}
 .text-1{
  color: black;
  font-family:Arial, Helvetica, sans-serif;

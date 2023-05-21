@@ -3,31 +3,47 @@
         <div class="row">
             <div class="col-sm-6 col-lg-3 p-b-50">
                 <h4 class="stext-301 cl0 p-b-30">
-                    Categories
+
                 </h4>
 
                 <ul>
                     <li class="p-b-10">
-                        <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Women
+                        <a href="#" class="stext-105 cl7 hov-cl1 trans-04">
+                            <i class="fab fa-facebook"></i>
+                            Fanpage Facebook
                         </a>
                     </li>
 
                     <li class="p-b-10">
-                        <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Men
+                        <a href="#" class="stext-105 cl7 hov-cl1 trans-04">
+                            <i class="fab fa-youtube"></i>
+                            Youtube
                         </a>
                     </li>
 
                     <li class="p-b-10">
-                        <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Shoes
+                        <a href="#" class="stext-105 cl7 hov-cl1 trans-04">
+                            <i class="fab fa-twitter"></i>
+                            Twitter
                         </a>
                     </li>
 
                     <li class="p-b-10">
-                        <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Watches
+                        <a href="#" class="stext-105 cl7 hov-cl1 trans-04">
+                            <i class="fab fa-tiktok"></i>
+                            Tiktok
+                        </a>
+                    </li>
+                    <li class="p-b-10">
+                        <a href="#" class="stext-105 cl7 hov-cl1 trans-04">
+                            <i class="fab fa-instagram"></i>
+                            Instagram
+                        </a>
+                    </li>
+                    <li class="p-b-10">
+                        <a href="#" class="stext-105 cl7 hov-cl1 trans-04">
+                            <i class="fab fa-skype"></i>
+                            Skype
                         </a>
                     </li>
                 </ul>
@@ -35,31 +51,31 @@
 
             <div class="col-sm-6 col-lg-3 p-b-50">
                 <h4 class="stext-301 cl0 p-b-30">
-                    Help
+                    Chính Sách Hỗ Trợ
                 </h4>
 
                 <ul>
                     <li class="p-b-10">
                         <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Track Order
+                            Chính sách bảo mật
                         </a>
                     </li>
 
                     <li class="p-b-10">
                         <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Returns
+                            Chính sách vận chuyển
                         </a>
                     </li>
 
                     <li class="p-b-10">
                         <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            Shipping
+                            Chính sách đổi trả
                         </a>
                     </li>
 
                     <li class="p-b-10">
                         <a href="#" class="stext-107 cl7 hov-cl1 trans-04">
-                            FAQs
+                            Chính sách thanh toán
                         </a>
                     </li>
                 </ul>
@@ -67,45 +83,39 @@
 
             <div class="col-sm-6 col-lg-3 p-b-50">
                 <h4 class="stext-301 cl0 p-b-30">
-                    GET IN TOUCH
+                    timewatch
                 </h4>
 
                 <p class="stext-107 cl7 size-201">
-                    Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
+                    172 Lê Duẩn, Tp Vinh, Nghệ An
+                </p>
+                <p class="stext-107 cl7 size-201">
+                    0976943246
                 </p>
 
                 <div class="p-t-27">
                     <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-                        <i class="fa fa-facebook"></i>
+                        <i class="fab fa-facebook"></i>
                     </a>
 
                     <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-                        <i class="fa fa-instagram"></i>
+                        <i class="fab fa-instagram"></i>
                     </a>
 
                     <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-                        <i class="fa fa-pinterest-p"></i>
+                        <i class="fab fa-pinterest-p"></i>
                     </a>
                 </div>
             </div>
 
             <div class="col-sm-6 col-lg-3 p-b-50">
                 <h4 class="stext-301 cl0 p-b-30">
-                    Newsletter
+
                 </h4>
 
-                <form>
-                    <div class="wrap-input1 w-full p-b-4">
-                        <input class="input1 bg-none plh1 stext-107 cl7" type="text" name="email" placeholder="email@example.com">
-                        <div class="focus-input1 trans-04"></div>
-                    </div>
-
-                    <div class="p-t-18">
-                        <button class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04">
-                            Subscribe
-                        </button>
-                    </div>
-                </form>
+                <p class="stext-107 cl7 size-201">
+                    <img src="\teamplate\images/dk.png" alt="">
+                </p>
             </div>
         </div>
 
@@ -254,6 +264,8 @@
         })
     });
 </script>
+<!-- ==================================Mail=============================== -->
+
 <!--===============================================================================================-->
 <script src="/teamplate/js/main.js"></script>
 <script src="/teamplate/js/product.js"></script>

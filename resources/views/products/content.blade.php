@@ -4,7 +4,7 @@
 <div class="container p-t-80">
     <div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
         <a href="/" class="stext-109 cl8 hov-cl1 trans-04">
-            Home
+            Trang chủ
             <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
         </a>
 
@@ -74,10 +74,12 @@
                     <h4 class="mtext-105 cl2 js-name-detail p-b-14">
                         {{ $title }}
                     </h4>
-
+                    
                     <span class="mtext-106 cl2">
-                        {!! \App\Helpers\Helper::price($product->price, $product->price_sale) !!}
+                       {!! \App\Helpers\Helper::price($product->price, $product->price_sale) !!}
                     </span>
+
+
 
                     <p class="text-4 cl3 p-t-23">
                         {{ $product->description }}
@@ -120,24 +122,24 @@
                         <div class="flex-m bor9 p-r-10 m-r-11">
                             <a href="#"
                                class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 js-addwish-detail tooltip100"
-                               data-tooltip="Add to Wishlist">
-                                <i class="zmdi zmdi-favorite"></i>
+                               data-tooltip="Thêm VISA">
+                               <img src="/teamplate/images/icons/icon-pay-02.png" alt="ICON-PAY">
                             </a>
                         </div>
 
                         <a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100"
                            data-tooltip="Facebook">
-                            <i class="fas fa-facebook"></i>
+                            <i class="fab fa-facebook"></i>
                         </a>
 
                         <a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100"
                            data-tooltip="Twitter">
-                            <i class="fas fa-twitter"></i>
+                            <i class="fab fa-twitter"></i>
                         </a>
 
                         <a href="#" class="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100"
                            data-tooltip="Google Plus">
-                            <i class="fas fa-google-plus"></i>
+                            <i class="fab fa-google-plus"></i>
                         </a>
                     </div>
                 </div>
@@ -240,7 +242,7 @@
                                     <!-- Review -->
                                     <div class="flex-w flex-t p-b-68">
                                         <div class="wrap-pic-s size-109 bor0 of-hidden m-r-18 m-t-6">
-                                            <img src="images/avatar-01.jpg" alt="AVATAR">
+                                            <img src="/teamplate/images/avatar-01.jpg" alt="AVATAR">
                                         </div>
 
                                         <div class="size-207">
@@ -259,8 +261,7 @@
                                             </div>
 
                                             <p class="stext-102 cl6">
-                                                Quod autem in homine praestantissimum atque optimum est, id
-                                                deseruit. Apud ceteros autem philosophos
+                                                Sản phẩm tốt, ngoại hình xuất sắc, giá cả hợp lý
                                             </p>
                                         </div>
                                     </div>
@@ -268,16 +269,16 @@
                                     <!-- Add review -->
                                     <form class="w-full">
                                         <h5 class="mtext-108 cl2 p-b-7">
-                                            Add a review
+                                            Thêm review
                                         </h5>
 
                                         <p class="stext-102 cl6">
-                                            Your email address will not be published. Required fields are marked *
+                                            Địa chỉ Email được bảo mật. Các trường bắt buộc có dấu *
                                         </p>
 
                                         <div class="flex-w flex-m p-t-50 p-b-23">
                                             <span class="stext-102 cl3 m-r-16">
-                                                Your Rating
+                                                Đánh giá của bạn
                                             </span>
 
                                             <span class="wrap-rating fs-18 cl11 pointer">
@@ -292,13 +293,13 @@
 
                                         <div class="row p-b-25">
                                             <div class="col-12 p-b-5">
-                                                <label class="stext-102 cl3" for="review">Your review</label>
+                                                <label class="stext-102 cl3" for="review">Nội dung nhận xét</label>
                                                 <textarea class="size-110 bor8 stext-102 cl2 p-lr-20 p-tb-10"
                                                           id="review" name="review"></textarea>
                                             </div>
 
                                             <div class="col-sm-6 p-b-5">
-                                                <label class="stext-102 cl3" for="name">Name</label>
+                                                <label class="stext-102 cl3" for="name">Họ tên</label>
                                                 <input class="size-111 bor8 stext-102 cl2 p-lr-20" id="name"
                                                        type="text" name="name">
                                             </div>
@@ -312,7 +313,7 @@
 
                                         <button
                                             class="flex-c-m stext-101 cl0 size-112 bg7 bor11 hov-btn3 p-lr-15 trans-04 m-b-10">
-                                            Submit
+                                            Gửi
                                         </button>
                                     </form>
                                 </div>

@@ -29,14 +29,12 @@
                             <a href="/tin-tuc">Blog</a>
                         </li>
 
-
-
                         <li>
-                            <a href="about.html">Thông Tin</a>
+                            <a href="/gioi-thieu">Giới Thiệu</a>
                         </li>
 
                         <li>
-                            <a href="contact.html">Liên Hệ</a>
+                            <a href="/lien-he">Liên Hệ</a>
                         </li>
                     </ul>
                 </div>
@@ -89,6 +87,11 @@
                 <li class="active-menu"><a href="/">Trang Chủ</a></li>
                 <!-- Hien menu -->
                 {!! $menusHtml !!}
+
+                <li>
+                    <a href="/tin-tuc">Blog</a>
+                </li>
+
                 <li>
                     <a href="about.html">Thông Tin</a>
                 </li>

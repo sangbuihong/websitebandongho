@@ -1,7 +1,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
-      <span class="brand-text font-weight-light">ADMIN</span>
+      <span class="brand-text col-12 font-weight-light">ADMIN</span>
     </a>
 
     <!-- Sidebar -->
@@ -59,7 +59,7 @@
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <i class="nav-icon fas fa-th"></i>
+                    <i class="nav-icon fas fa-warehouse"></i>
                 <p>
                     Sản Phẩm
                     <i class="right fas fa-angle-left"></i>
@@ -169,11 +169,35 @@
                 </ul>
             </li>
             <li class="nav-item">
+                <a href="#" class="nav-link">
+
+                    <i class="nav-icon fas fa-info"></i>
+                    <p>
+                        Giới Thiệu
+                        <i class="right fas fa-angle-left"></i>
+                        </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="/admin/infors/add" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Thêm </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/infors/list" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Danh sách </p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
                 <a href="/admin/menus/list" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
-                    Widgets
-                    <span class="right badge badge-danger">New</span>
+                    Tiện ích
+                    <span class="right badge badge-danger">Mới</span>
                 </p>
                 </a>
             </li>
