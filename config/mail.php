@@ -35,14 +35,6 @@ return [
 
     'mailers' => [
         'smtp' => [
-            // 'transport' => 'smtp',
-            // 'host' => 'smtp.gmail.com',
-            // 'port' =>  587,
-            // 'encryption' => 'tls',
-            // 'username' => 'bhsangxd@gmail.com',
-            // 'password' => 'yolbyofzcwhpjwoo',
-            // 'timeout' => null,
-            // 'auth_mode' => null,
             'transport' => 'smtp',
             'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
             'port' => env('MAIL_PORT', 587),
